@@ -30,7 +30,7 @@ class FulfillmentService extends AbstractFulfillmentService {
   // Method is called when a shipping method is created.
   // To validate the selected shipping method from admin panel
   async validateOption(data: Record<string, unknown>): Promise<boolean> {
-    return data.id == "my-fulfillment";
+    return data.id == "custom-fulfillment";
   }
 
   // This method is called when a shipping method is created. This typically happens when the customer chooses a shipping option during checkout.
@@ -79,7 +79,7 @@ class FulfillmentService extends AbstractFulfillmentService {
 
   // Used to determine whether a shipping option is calculated dynamically or flat rate.
   async canCalculate(data: Record<string, unknown>): Promise<boolean> {
-    return data.id === "my-fulfillment-dynamic";
+    return data.id === "custom-fulfillment-dynamic";
   }
 
   async createReturn(
