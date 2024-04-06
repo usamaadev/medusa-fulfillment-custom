@@ -1,4 +1,4 @@
-<h1>Boilerplate for making custom fulfillment provider with Medusa</h1>
+<h1>TypeScript Boilerplate for making custom fulfillment provider with Medusa</h1>
 
 <ul>
   <li>With typescript</li>
